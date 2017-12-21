@@ -1,0 +1,7 @@
+vhdl work "C:\Users\Pratyus\cache\Dff.vhd"
+vhdl work "C:\Users\Pratyus\cache\tag_data_l1.vhd"
+vhdl work "C:\Users\Pratyus\cache\decoder4x16.vhd"
+vhdl work "C:\Users\Pratyus\cache\tag_mem.vhd"
+vhdl work "C:\Users\Pratyus\cache\memory_decoder_8x256.vhd"
+vhdl work "C:\Users\Pratyus\cache\inout_buf_tag.vhd"
+vhdl work "C:\Users\Pratyus\cache\cache_tag_data_l1.vhd"

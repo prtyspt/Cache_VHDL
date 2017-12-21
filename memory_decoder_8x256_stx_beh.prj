@@ -1,0 +1,2 @@
+vhdl isim_temp "decoder4x16.vhd"
+vhdl isim_temp "memory_decoder_8x256.vhd"

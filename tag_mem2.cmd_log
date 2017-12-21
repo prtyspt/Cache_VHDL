@@ -1,0 +1,3 @@
+vhdtdtfi -prj cache -o C:/Users/Pratyus/cache/tag_mem2.vhi -module tag_mem2 -template C:/Xilinx/13.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Dff.vhd -lib work tag_data_l2.vhd -lib work tag_mem2.vhd 
+vhdtdtfi -lib work Dff.vhd -lib work tag_data_l2.vhd -lib work tag_mem2.vhd -prj cache -o tag_mem2.spl -module tag_mem2 -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e tag_mem2.spl C:/Users/Pratyus/cache/tag_mem2.sym 

@@ -1,0 +1,7 @@
+[Inputs]
+en
+=addr_req[21:0]=
+=addr_tag[21:0]=
+[Outputs]
+tag_hit
+[BiDir]

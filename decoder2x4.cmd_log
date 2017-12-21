@@ -1,0 +1,2 @@
+vhdtdtfi -lib work decoder2x4.vhd -prj cache -o decoder2x4.spl -module decoder2x4 -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e decoder2x4.spl C:/Users/Pratyus/cache/decoder2x4.sym 

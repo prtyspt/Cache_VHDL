@@ -1,0 +1,963 @@
+Release 13.2 - xst O.61xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: memory_decoder_8x256.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "memory_decoder_8x256.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "memory_decoder_8x256"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : memory_decoder_8x256
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Pratyus/cache/decoder4x16.vhd" in Library work.
+Architecture behavioral of Entity decoder4x16 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/memory_decoder_8x256.vhd" in Library work.
+Entity <memory_decoder_8x256> compiled.
+Entity <memory_decoder_8x256> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <memory_decoder_8x256> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <decoder4x16> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <memory_decoder_8x256> in library <work> (Architecture <Behavioral>).
+Entity <memory_decoder_8x256> analyzed. Unit <memory_decoder_8x256> generated.
+
+Analyzing Entity <decoder4x16> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "C:/Users/Pratyus/cache/decoder4x16.vhd" line 95: Mux is complete : default of case is discarded
+Entity <decoder4x16> analyzed. Unit <decoder4x16> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <decoder4x16>.
+    Related source file is "C:/Users/Pratyus/cache/decoder4x16.vhd".
+WARNING:Xst:737 - Found 16-bit latch for signal <E>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-of-16 decoder for signal <E$mux0001> created at line 47.
+    Summary:
+	inferred   1 Decoder(s).
+Unit <decoder4x16> synthesized.
+
+
+Synthesizing Unit <memory_decoder_8x256>.
+    Related source file is "C:/Users/Pratyus/cache/memory_decoder_8x256.vhd".
+Unit <memory_decoder_8x256> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 17
+ 16-bit latch                                          : 17
+# Decoders                                             : 17
+ 1-of-16 decoder                                       : 17
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 17
+ 16-bit latch                                          : 17
+# Decoders                                             : 17
+ 1-of-16 decoder                                       : 17
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <memory_decoder_8x256> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block memory_decoder_8x256, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : memory_decoder_8x256.ngr
+Top Level Output File Name         : memory_decoder_8x256
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 265
+
+Cell Usage :
+# BELS                             : 32
+#      LUT4                        : 32
+# FlipFlops/Latches                : 272
+#      LD                          : 272
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 264
+#      IBUF                        : 8
+#      OBUF                        : 256
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       18  out of   4656     0%  
+ Number of Slice Flip Flops:             16  out of   9312     0%  
+ Number of 4 input LUTs:                 32  out of   9312     0%  
+ Number of IOs:                         265
+ Number of bonded IOBs:                 265  out of    232   114% (*) 
+    IOB Flip Flops:                     256
+ Number of GCLKs:                         1  out of     24     4%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)      | Load  |
+-----------------------------------+----------------------------+-------+
+mem_en                             | BUFGP                      | 16    |
+stage1/E_15                        | NONE(struct[16].stage2/E_0)| 16    |
+stage1/E_14                        | NONE(struct[15].stage2/E_0)| 16    |
+stage1/E_13                        | NONE(struct[14].stage2/E_0)| 16    |
+stage1/E_12                        | NONE(struct[13].stage2/E_0)| 16    |
+stage1/E_11                        | NONE(struct[12].stage2/E_0)| 16    |
+stage1/E_10                        | NONE(struct[11].stage2/E_0)| 16    |
+stage1/E_9                         | NONE(struct[10].stage2/E_0)| 16    |
+stage1/E_8                         | NONE(struct[9].stage2/E_0) | 16    |
+stage1/E_7                         | NONE(struct[8].stage2/E_0) | 16    |
+stage1/E_6                         | NONE(struct[7].stage2/E_0) | 16    |
+stage1/E_5                         | NONE(struct[6].stage2/E_0) | 16    |
+stage1/E_4                         | NONE(struct[5].stage2/E_0) | 16    |
+stage1/E_3                         | NONE(struct[4].stage2/E_0) | 16    |
+stage1/E_2                         | NONE(struct[3].stage2/E_0) | 16    |
+stage1/E_1                         | NONE(struct[2].stage2/E_0) | 16    |
+stage1/E_0                         | NONE(struct[1].stage2/E_0) | 16    |
+-----------------------------------+----------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 3.439ns
+   Maximum output required time after clock: 4.368ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mem_en'
+  Total number of paths / destination ports: 64 / 16
+-------------------------------------------------------------------------
+Offset:              3.439ns (Levels of Logic = 2)
+  Source:            S<4> (PAD)
+  Destination:       stage1/E_0 (LATCH)
+  Destination Clock: mem_en falling
+
+  Data Path: S<4> to stage1/E_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  S_4_IBUF (S_4_IBUF)
+     LUT4:I0->O            1   0.704   0.000  stage1/Mdecod_E_mux000161 (stage1/E_mux0001<9>)
+     LD:D                      0.308          stage1/E_6
+    ----------------------------------------
+    Total                      3.439ns (2.230ns logic, 1.209ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'stage1/E_15'
+  Total number of paths / destination ports: 64 / 16
+-------------------------------------------------------------------------
+Offset:              3.439ns (Levels of Logic = 2)
+  Source:            S<3> (PAD)
+  Destination:       struct[16].stage2/E_0 (LATCH)
+  Destination Clock: stage1/E_15 falling
+
+  Data Path: S<3> to struct[16].stage2/E_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  S_3_IBUF (S_3_IBUF)
+     LUT4:I0->O           16   0.704   0.000  struct[10].stage2/E_mux0001<9>1 (struct[10].stage2/E_mux0001<9>)
+     LD:D                      0.308          struct[16].stage2/E_6
+    ----------------------------------------
+    Total                      3.439ns (2.230ns logic, 1.209ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'stage1/E_14'
+  Total number of paths / destination ports: 64 / 16
+-------------------------------------------------------------------------
+Offset:              3.439ns (Levels of Logic = 2)
+  Source:            S<3> (PAD)
+  Destination:       struct[15].stage2/E_0 (LATCH)
+  Destination Clock: stage1/E_14 falling
+
+  Data Path: S<3> to struct[15].stage2/E_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  S_3_IBUF (S_3_IBUF)
+     LUT4:I0->O           16   0.704   0.000  struct[10].stage2/E_mux0001<9>1 (struct[10].stage2/E_mux0001<9>)
+     LD:D                      0.308          struct[15].stage2/E_6
+    ----------------------------------------
+    Total                      3.439ns (2.230ns logic, 1.209ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'stage1/E_13'
+  Total number of paths / destination ports: 64 / 16
+-------------------------------------------------------------------------
+Offset:              3.439ns (Levels of Logic = 2)
+  Source:            S<3> (PAD)
+  Destination:       struct[14].stage2/E_0 (LATCH)
+  Destination Clock: stage1/E_13 falling
+
+  Data Path: S<3> to struct[14].stage2/E_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  S_3_IBUF (S_3_IBUF)
+     LUT4:I0->O           16   0.704   0.000  struct[10].stage2/E_mux0001<9>1 (struct[10].stage2/E_mux0001<9>)
+     LD:D                      0.308          struct[14].stage2/E_6
+    ----------------------------------------
+    Total                      3.439ns (2.230ns logic, 1.209ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'stage1/E_12'
+  Total number of paths / destination ports: 64 / 16
+-------------------------------------------------------------------------
+Offset:              3.439ns (Levels of Logic = 2)
+  Source:            S<3> (PAD)
+  Destination:       struct[13].stage2/E_0 (LATCH)
+  Destination Clock: stage1/E_12 falling
+
+  Data Path: S<3> to struct[13].stage2/E_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  S_3_IBUF (S_3_IBUF)
+     LUT4:I0->O           16   0.704   0.000  struct[10].stage2/E_mux0001<9>1 (struct[10].stage2/E_mux0001<9>)
+     LD:D                      0.308          struct[13].stage2/E_6
+    ----------------------------------------
+    Total                      3.439ns (2.230ns logic, 1.209ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'stage1/E_11'
+  Total number of paths / destination ports: 64 / 16
+-------------------------------------------------------------------------
+Offset:              3.439ns (Levels of Logic = 2)
+  Source:            S<3> (PAD)
+  Destination:       struct[12].stage2/E_0 (LATCH)
+  Destination Clock: stage1/E_11 falling
+
+  Data Path: S<3> to struct[12].stage2/E_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  S_3_IBUF (S_3_IBUF)
+     LUT4:I0->O           16   0.704   0.000  struct[10].stage2/E_mux0001<9>1 (struct[10].stage2/E_mux0001<9>)
+     LD:D                      0.308          struct[12].stage2/E_6
+    ----------------------------------------
+    Total                      3.439ns (2.230ns logic, 1.209ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'stage1/E_10'
+  Total number of paths / destination ports: 64 / 16
+-------------------------------------------------------------------------
+Offset:              3.439ns (Levels of Logic = 2)
+  Source:            S<3> (PAD)
+  Destination:       struct[11].stage2/E_0 (LATCH)
+  Destination Clock: stage1/E_10 falling
+
+  Data Path: S<3> to struct[11].stage2/E_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  S_3_IBUF (S_3_IBUF)
+     LUT4:I0->O           16   0.704   0.000  struct[10].stage2/E_mux0001<9>1 (struct[10].stage2/E_mux0001<9>)
+     LD:D                      0.308          struct[11].stage2/E_6
+    ----------------------------------------
+    Total                      3.439ns (2.230ns logic, 1.209ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'stage1/E_9'
+  Total number of paths / destination ports: 64 / 16
+-------------------------------------------------------------------------
+Offset:              3.439ns (Levels of Logic = 2)
+  Source:            S<3> (PAD)
+  Destination:       struct[10].stage2/E_0 (LATCH)
+  Destination Clock: stage1/E_9 falling
+
+  Data Path: S<3> to struct[10].stage2/E_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  S_3_IBUF (S_3_IBUF)
+     LUT4:I0->O           16   0.704   0.000  struct[10].stage2/E_mux0001<9>1 (struct[10].stage2/E_mux0001<9>)
+     LD:D                      0.308          struct[10].stage2/E_6
+    ----------------------------------------
+    Total                      3.439ns (2.230ns logic, 1.209ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'stage1/E_8'
+  Total number of paths / destination ports: 64 / 16
+-------------------------------------------------------------------------
+Offset:              3.439ns (Levels of Logic = 2)
+  Source:            S<3> (PAD)
+  Destination:       struct[9].stage2/E_0 (LATCH)
+  Destination Clock: stage1/E_8 falling
+
+  Data Path: S<3> to struct[9].stage2/E_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  S_3_IBUF (S_3_IBUF)
+     LUT4:I0->O           16   0.704   0.000  struct[10].stage2/E_mux0001<9>1 (struct[10].stage2/E_mux0001<9>)
+     LD:D                      0.308          struct[9].stage2/E_6
+    ----------------------------------------
+    Total                      3.439ns (2.230ns logic, 1.209ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'stage1/E_7'
+  Total number of paths / destination ports: 64 / 16
+-------------------------------------------------------------------------
+Offset:              3.439ns (Levels of Logic = 2)
+  Source:            S<3> (PAD)
+  Destination:       struct[8].stage2/E_0 (LATCH)
+  Destination Clock: stage1/E_7 falling
+
+  Data Path: S<3> to struct[8].stage2/E_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  S_3_IBUF (S_3_IBUF)
+     LUT4:I0->O           16   0.704   0.000  struct[10].stage2/E_mux0001<9>1 (struct[10].stage2/E_mux0001<9>)
+     LD:D                      0.308          struct[8].stage2/E_6
+    ----------------------------------------
+    Total                      3.439ns (2.230ns logic, 1.209ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'stage1/E_6'
+  Total number of paths / destination ports: 64 / 16
+-------------------------------------------------------------------------
+Offset:              3.439ns (Levels of Logic = 2)
+  Source:            S<3> (PAD)
+  Destination:       struct[7].stage2/E_0 (LATCH)
+  Destination Clock: stage1/E_6 falling
+
+  Data Path: S<3> to struct[7].stage2/E_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  S_3_IBUF (S_3_IBUF)
+     LUT4:I0->O           16   0.704   0.000  struct[10].stage2/E_mux0001<9>1 (struct[10].stage2/E_mux0001<9>)
+     LD:D                      0.308          struct[7].stage2/E_6
+    ----------------------------------------
+    Total                      3.439ns (2.230ns logic, 1.209ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'stage1/E_5'
+  Total number of paths / destination ports: 64 / 16
+-------------------------------------------------------------------------
+Offset:              3.439ns (Levels of Logic = 2)
+  Source:            S<3> (PAD)
+  Destination:       struct[6].stage2/E_0 (LATCH)
+  Destination Clock: stage1/E_5 falling
+
+  Data Path: S<3> to struct[6].stage2/E_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  S_3_IBUF (S_3_IBUF)
+     LUT4:I0->O           16   0.704   0.000  struct[10].stage2/E_mux0001<9>1 (struct[10].stage2/E_mux0001<9>)
+     LD:D                      0.308          struct[6].stage2/E_6
+    ----------------------------------------
+    Total                      3.439ns (2.230ns logic, 1.209ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'stage1/E_4'
+  Total number of paths / destination ports: 64 / 16
+-------------------------------------------------------------------------
+Offset:              3.439ns (Levels of Logic = 2)
+  Source:            S<3> (PAD)
+  Destination:       struct[5].stage2/E_0 (LATCH)
+  Destination Clock: stage1/E_4 falling
+
+  Data Path: S<3> to struct[5].stage2/E_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  S_3_IBUF (S_3_IBUF)
+     LUT4:I0->O           16   0.704   0.000  struct[10].stage2/E_mux0001<9>1 (struct[10].stage2/E_mux0001<9>)
+     LD:D                      0.308          struct[5].stage2/E_6
+    ----------------------------------------
+    Total                      3.439ns (2.230ns logic, 1.209ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'stage1/E_3'
+  Total number of paths / destination ports: 64 / 16
+-------------------------------------------------------------------------
+Offset:              3.439ns (Levels of Logic = 2)
+  Source:            S<3> (PAD)
+  Destination:       struct[4].stage2/E_0 (LATCH)
+  Destination Clock: stage1/E_3 falling
+
+  Data Path: S<3> to struct[4].stage2/E_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  S_3_IBUF (S_3_IBUF)
+     LUT4:I0->O           16   0.704   0.000  struct[10].stage2/E_mux0001<9>1 (struct[10].stage2/E_mux0001<9>)
+     LD:D                      0.308          struct[4].stage2/E_6
+    ----------------------------------------
+    Total                      3.439ns (2.230ns logic, 1.209ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'stage1/E_2'
+  Total number of paths / destination ports: 64 / 16
+-------------------------------------------------------------------------
+Offset:              3.439ns (Levels of Logic = 2)
+  Source:            S<3> (PAD)
+  Destination:       struct[3].stage2/E_0 (LATCH)
+  Destination Clock: stage1/E_2 falling
+
+  Data Path: S<3> to struct[3].stage2/E_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  S_3_IBUF (S_3_IBUF)
+     LUT4:I0->O           16   0.704   0.000  struct[10].stage2/E_mux0001<9>1 (struct[10].stage2/E_mux0001<9>)
+     LD:D                      0.308          struct[3].stage2/E_6
+    ----------------------------------------
+    Total                      3.439ns (2.230ns logic, 1.209ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'stage1/E_1'
+  Total number of paths / destination ports: 64 / 16
+-------------------------------------------------------------------------
+Offset:              3.439ns (Levels of Logic = 2)
+  Source:            S<3> (PAD)
+  Destination:       struct[2].stage2/E_0 (LATCH)
+  Destination Clock: stage1/E_1 falling
+
+  Data Path: S<3> to struct[2].stage2/E_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  S_3_IBUF (S_3_IBUF)
+     LUT4:I0->O           16   0.704   0.000  struct[10].stage2/E_mux0001<9>1 (struct[10].stage2/E_mux0001<9>)
+     LD:D                      0.308          struct[2].stage2/E_6
+    ----------------------------------------
+    Total                      3.439ns (2.230ns logic, 1.209ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'stage1/E_0'
+  Total number of paths / destination ports: 64 / 16
+-------------------------------------------------------------------------
+Offset:              3.439ns (Levels of Logic = 2)
+  Source:            S<3> (PAD)
+  Destination:       struct[1].stage2/E_0 (LATCH)
+  Destination Clock: stage1/E_0 falling
+
+  Data Path: S<3> to struct[1].stage2/E_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  S_3_IBUF (S_3_IBUF)
+     LUT4:I0->O           16   0.704   0.000  struct[10].stage2/E_mux0001<9>1 (struct[10].stage2/E_mux0001<9>)
+     LD:D                      0.308          struct[1].stage2/E_6
+    ----------------------------------------
+    Total                      3.439ns (2.230ns logic, 1.209ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'stage1/E_15'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            struct[16].stage2/E_15 (LATCH)
+  Destination:       en<255> (PAD)
+  Source Clock:      stage1/E_15 falling
+
+  Data Path: struct[16].stage2/E_15 to en<255>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  struct[16].stage2/E_15 (struct[16].stage2/E_15)
+     OBUF:I->O                 3.272          en_255_OBUF (en<255>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'stage1/E_14'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            struct[15].stage2/E_15 (LATCH)
+  Destination:       en<239> (PAD)
+  Source Clock:      stage1/E_14 falling
+
+  Data Path: struct[15].stage2/E_15 to en<239>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  struct[15].stage2/E_15 (struct[15].stage2/E_15)
+     OBUF:I->O                 3.272          en_239_OBUF (en<239>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'stage1/E_13'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            struct[14].stage2/E_15 (LATCH)
+  Destination:       en<223> (PAD)
+  Source Clock:      stage1/E_13 falling
+
+  Data Path: struct[14].stage2/E_15 to en<223>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  struct[14].stage2/E_15 (struct[14].stage2/E_15)
+     OBUF:I->O                 3.272          en_223_OBUF (en<223>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'stage1/E_12'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            struct[13].stage2/E_15 (LATCH)
+  Destination:       en<207> (PAD)
+  Source Clock:      stage1/E_12 falling
+
+  Data Path: struct[13].stage2/E_15 to en<207>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  struct[13].stage2/E_15 (struct[13].stage2/E_15)
+     OBUF:I->O                 3.272          en_207_OBUF (en<207>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'stage1/E_11'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            struct[12].stage2/E_15 (LATCH)
+  Destination:       en<191> (PAD)
+  Source Clock:      stage1/E_11 falling
+
+  Data Path: struct[12].stage2/E_15 to en<191>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  struct[12].stage2/E_15 (struct[12].stage2/E_15)
+     OBUF:I->O                 3.272          en_191_OBUF (en<191>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'stage1/E_10'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            struct[11].stage2/E_15 (LATCH)
+  Destination:       en<175> (PAD)
+  Source Clock:      stage1/E_10 falling
+
+  Data Path: struct[11].stage2/E_15 to en<175>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  struct[11].stage2/E_15 (struct[11].stage2/E_15)
+     OBUF:I->O                 3.272          en_175_OBUF (en<175>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'stage1/E_9'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            struct[10].stage2/E_15 (LATCH)
+  Destination:       en<159> (PAD)
+  Source Clock:      stage1/E_9 falling
+
+  Data Path: struct[10].stage2/E_15 to en<159>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  struct[10].stage2/E_15 (struct[10].stage2/E_15)
+     OBUF:I->O                 3.272          en_159_OBUF (en<159>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'stage1/E_8'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            struct[9].stage2/E_15 (LATCH)
+  Destination:       en<143> (PAD)
+  Source Clock:      stage1/E_8 falling
+
+  Data Path: struct[9].stage2/E_15 to en<143>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  struct[9].stage2/E_15 (struct[9].stage2/E_15)
+     OBUF:I->O                 3.272          en_143_OBUF (en<143>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'stage1/E_7'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            struct[8].stage2/E_15 (LATCH)
+  Destination:       en<127> (PAD)
+  Source Clock:      stage1/E_7 falling
+
+  Data Path: struct[8].stage2/E_15 to en<127>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  struct[8].stage2/E_15 (struct[8].stage2/E_15)
+     OBUF:I->O                 3.272          en_127_OBUF (en<127>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'stage1/E_6'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            struct[7].stage2/E_15 (LATCH)
+  Destination:       en<111> (PAD)
+  Source Clock:      stage1/E_6 falling
+
+  Data Path: struct[7].stage2/E_15 to en<111>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  struct[7].stage2/E_15 (struct[7].stage2/E_15)
+     OBUF:I->O                 3.272          en_111_OBUF (en<111>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'stage1/E_5'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            struct[6].stage2/E_15 (LATCH)
+  Destination:       en<95> (PAD)
+  Source Clock:      stage1/E_5 falling
+
+  Data Path: struct[6].stage2/E_15 to en<95>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  struct[6].stage2/E_15 (struct[6].stage2/E_15)
+     OBUF:I->O                 3.272          en_95_OBUF (en<95>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'stage1/E_4'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            struct[5].stage2/E_15 (LATCH)
+  Destination:       en<79> (PAD)
+  Source Clock:      stage1/E_4 falling
+
+  Data Path: struct[5].stage2/E_15 to en<79>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  struct[5].stage2/E_15 (struct[5].stage2/E_15)
+     OBUF:I->O                 3.272          en_79_OBUF (en<79>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'stage1/E_3'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            struct[4].stage2/E_15 (LATCH)
+  Destination:       en<63> (PAD)
+  Source Clock:      stage1/E_3 falling
+
+  Data Path: struct[4].stage2/E_15 to en<63>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  struct[4].stage2/E_15 (struct[4].stage2/E_15)
+     OBUF:I->O                 3.272          en_63_OBUF (en<63>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'stage1/E_2'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            struct[3].stage2/E_15 (LATCH)
+  Destination:       en<47> (PAD)
+  Source Clock:      stage1/E_2 falling
+
+  Data Path: struct[3].stage2/E_15 to en<47>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  struct[3].stage2/E_15 (struct[3].stage2/E_15)
+     OBUF:I->O                 3.272          en_47_OBUF (en<47>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'stage1/E_1'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            struct[2].stage2/E_15 (LATCH)
+  Destination:       en<31> (PAD)
+  Source Clock:      stage1/E_1 falling
+
+  Data Path: struct[2].stage2/E_15 to en<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  struct[2].stage2/E_15 (struct[2].stage2/E_15)
+     OBUF:I->O                 3.272          en_31_OBUF (en<31>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'stage1/E_0'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            struct[1].stage2/E_15 (LATCH)
+  Destination:       en<15> (PAD)
+  Source Clock:      stage1/E_0 falling
+
+  Data Path: struct[1].stage2/E_15 to en<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  struct[1].stage2/E_15 (struct[1].stage2/E_15)
+     OBUF:I->O                 3.272          en_15_OBUF (en<15>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.68 secs
+ 
+--> 
+
+Total memory usage is 247120 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

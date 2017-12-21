@@ -1,0 +1,7 @@
+[Inputs]
+wr
+rd
+[Outputs]
+[BiDir]
+=A[21:0]=
+=B[21:0]=

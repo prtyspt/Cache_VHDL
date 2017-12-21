@@ -1,0 +1,7 @@
+[Inputs]
+clk
+=Din[21:0]=
+=en[255:0]=
+[Outputs]
+=Dout[21:0]=
+[BiDir]

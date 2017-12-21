@@ -1,0 +1,2 @@
+vhdl work "decoder4x16.vhd"
+vhdl work "memory_decoder_8x256.vhd"

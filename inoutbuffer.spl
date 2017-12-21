@@ -1,0 +1,7 @@
+[Inputs]
+wr
+rd
+[Outputs]
+[BiDir]
+=A[127:0]=
+=B[127:0]=

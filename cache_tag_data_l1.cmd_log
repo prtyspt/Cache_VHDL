@@ -1,0 +1,6 @@
+vhdtdtfi -lib work Dff.vhd -lib work tag_data_l1.vhd -lib work decoder4x16.vhd -lib work tag_mem.vhd -lib work memory_decoder_8x256.vhd -lib work inout_buf_tag.vhd -lib work cache_tag_data_l1.vhd -prj cache -o cache_tag_data_l1.spl -module cache_tag_data_l1 -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e cache_tag_data_l1.spl C:/Users/Pratyus/cache/cache_tag_data_l1.sym 
+vhdtdtfi -lib work Dff.vhd -lib work tag_data_l1.vhd -lib work decoder4x16.vhd -lib work tag_mem.vhd -lib work memory_decoder_8x256.vhd -lib work inout_buf_tag.vhd -lib work cache_tag_data_l1.vhd -prj cache -o cache_tag_data_l1.spl -module cache_tag_data_l1 -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e cache_tag_data_l1.spl C:/Users/Pratyus/cache/cache_tag_data_l1.sym 
+vhdtdtfi -lib work Dff.vhd -lib work tag_data_l1.vhd -lib work decoder4x16.vhd -lib work tag_mem.vhd -lib work memory_decoder_8x256.vhd -lib work inout_buf_tag.vhd -lib work cache_tag_data_l1.vhd -prj cache -o cache_tag_data_l1.spl -module cache_tag_data_l1 -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e cache_tag_data_l1.spl C:/Users/Pratyus/cache/cache_tag_data_l1.sym 

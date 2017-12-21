@@ -1,0 +1,17 @@
+[Inputs]
+C_reset
+clk
+en
+=add_req[31:0]=
+=cache_hit_l1[3:0]=
+=cache_hit_l2[7:0]=
+[Outputs]
+C_busy
+l1_miss
+l2_miss
+rd
+dav_l1
+dav_l2
+=add_l1[31:0]=
+=add_l2[31:0]=
+[BiDir]

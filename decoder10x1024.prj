@@ -1,0 +1,3 @@
+vhdl work "decoder4x16.vhd"
+vhdl work "decoder2x4.vhd"
+vhdl work "deocder10x1024.vhd"

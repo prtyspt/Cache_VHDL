@@ -1,0 +1,6 @@
+[Inputs]
+mem_en
+=S[7:0]=
+[Outputs]
+=en[255:0]=
+[BiDir]

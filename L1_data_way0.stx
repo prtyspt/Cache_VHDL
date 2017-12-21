@@ -1,0 +1,63 @@
+Release 13.2 - xst O.61xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Pratyus/cache/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.15 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Pratyus/cache/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.16 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Pratyus/cache/Dff.vhd" in Library work.
+Architecture behavioral of Entity dff is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/tag_data_l1.vhd" in Library work.
+Architecture behavioral of Entity tag_data_l1 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/decoder4x16.vhd" in Library work.
+Architecture behavioral of Entity decoder4x16 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/reg_128_data.vhd" in Library work.
+Architecture behavioral of Entity reg_128_data is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/memory_decoder_8x256.vhd" in Library work.
+Architecture behavioral of Entity memory_decoder_8x256 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/inout_buf_tag.vhd" in Library work.
+Architecture behavioral of Entity inout_buf_tag is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/tag_mem.vhd" in Library work.
+Architecture behavioral of Entity tag_mem is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/inoutbuffer.vhd" in Library work.
+Architecture behavioral of Entity inoutbuffer is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/data_mem.vhd" in Library work.
+Architecture behavioral of Entity data_mem is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/memory_l1.vhd" in Library work.
+Architecture structural of Entity memory_l1 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/cache_tag_data_l1.vhd" in Library work.
+Architecture structural of Entity cache_tag_data_l1 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/address_fields.vhd" in Library work.
+Architecture behavioral of Entity address_fields is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/tag_comparator.vhd" in Library work.
+Architecture behavioral of Entity tag_comparator is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/data_buff_l1.vhd" in Library work.
+Architecture behavioral of Entity data_buff_l1 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/L1_data_way0.vhd" in Library work.
+Entity <l1_data_way0> compiled.
+Entity <l1_data_way0> (Architecture <structural>) compiled.
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.70 secs
+ 
+--> 
+
+Total memory usage is 201620 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

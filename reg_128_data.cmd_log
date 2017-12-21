@@ -1,0 +1,8 @@
+vhdtdtfi -lib work Dff.vhd -lib work reg_128_data.vhd -prj cache -o reg_128_data.spl -module reg_128_data -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e reg_128_data.spl C:/Users/Pratyus/cache/reg_128_data.sym 
+vhdtdtfi -lib work Dff.vhd -lib work reg_128_data.vhd -prj cache -o reg_128_data.spl -module reg_128_data -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e reg_128_data.spl C:/Users/Pratyus/cache/reg_128_data.sym 
+vhdtdtfi -lib work Dff.vhd -lib work reg_128_data.vhd -prj cache -o reg_128_data.spl -module reg_128_data -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e reg_128_data.spl C:/Users/Pratyus/cache/reg_128_data.sym 
+vhdtdtfi -lib work Dff.vhd -lib work reg_128_data.vhd -prj cache -o reg_128_data.spl -module reg_128_data -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e reg_128_data.spl C:/Users/Pratyus/cache/reg_128_data.sym 

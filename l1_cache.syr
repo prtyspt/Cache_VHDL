@@ -1,0 +1,385 @@
+Release 13.2 - xst O.61xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: l1_cache.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "l1_cache.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "l1_cache"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : l1_cache
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Pratyus/cache/Dff.vhd" in Library work.
+Architecture behavioral of Entity dff is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/tag_data_l1.vhd" in Library work.
+Architecture behavioral of Entity tag_data_l1 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/decoder4x16.vhd" in Library work.
+Architecture behavioral of Entity decoder4x16 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/reg_128_data.vhd" in Library work.
+Architecture behavioral of Entity reg_128_data is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/memory_decoder_8x256.vhd" in Library work.
+Architecture behavioral of Entity memory_decoder_8x256 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/inout_buf_tag.vhd" in Library work.
+Architecture behavioral of Entity inout_buf_tag is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/tag_mem.vhd" in Library work.
+Architecture behavioral of Entity tag_mem is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/inoutbuffer.vhd" in Library work.
+Architecture behavioral of Entity inoutbuffer is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/data_mem.vhd" in Library work.
+Architecture behavioral of Entity data_mem is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/memory_l1.vhd" in Library work.
+Architecture structural of Entity memory_l1 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/cache_tag_data_l1.vhd" in Library work.
+Architecture structural of Entity cache_tag_data_l1 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/address_fields.vhd" in Library work.
+Architecture behavioral of Entity address_fields is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/tag_comparator.vhd" in Library work.
+Architecture behavioral of Entity tag_comparator is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/data_buff_l1.vhd" in Library work.
+Architecture behavioral of Entity data_buff_l1 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/L1_data_way0.vhd" in Library work.
+Architecture structural of Entity l1_data_way0 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/l1_cache.vhd" in Library work.
+Architecture structural of Entity l1_cache is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <l1_cache> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <l1_data_way0> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <l1_cache> in library <work> (Architecture <structural>).
+WARNING:Xst:2211 - "C:/Users/Pratyus/cache/l1_cache.vhd" line 54: Instantiating black box module <l1_data_way0>.
+WARNING:Xst:2211 - "C:/Users/Pratyus/cache/l1_cache.vhd" line 54: Instantiating black box module <l1_data_way0>.
+WARNING:Xst:2211 - "C:/Users/Pratyus/cache/l1_cache.vhd" line 54: Instantiating black box module <l1_data_way0>.
+Entity <l1_cache> analyzed. Unit <l1_cache> generated.
+
+Analyzing Entity <l1_data_way0.1> in library <work> (Architecture <behavioral>).
+Entity <l1_data_way0.1> analyzed. Unit <l1_data_way0.1> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <l1_data_way0_1>.
+    Related source file is "C:/Users/Pratyus/cache/L1_data_way0.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2563 - Inout <data_out<0>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<1>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<2>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<10>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<3>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<11>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<4>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<12>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<5>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<13>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<6>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<14>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<7>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<20>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<15>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<8>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<21>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<16>> is never assigned. Tied to value Z.
+WARNING:Xst:647 - Input <rd> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2563 - Inout <data_out<9>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<22>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<17>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<23>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<18>> is never assigned. Tied to value Z.
+WARNING:Xst:647 - Input <add> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2563 - Inout <data_out<24>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<19>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<30>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<25>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<31>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<26>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<27>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<28>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_out<29>> is never assigned. Tied to value Z.
+WARNING:Xst:647 - Input <wr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2563 - Inout <cache_hit> is never assigned. Tied to value Z.
+WARNING:Xst:1780 - Signal <tag> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <select_add> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <F3> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <F2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <F1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit tristate buffer for signal <cache_hit>.
+    Found 1-bit tristate buffer for signal <data_out<31>>.
+    Found 1-bit tristate buffer for signal <data_out<30>>.
+    Found 1-bit tristate buffer for signal <data_out<29>>.
+    Found 1-bit tristate buffer for signal <data_out<28>>.
+    Found 1-bit tristate buffer for signal <data_out<27>>.
+    Found 1-bit tristate buffer for signal <data_out<26>>.
+    Found 1-bit tristate buffer for signal <data_out<25>>.
+    Found 1-bit tristate buffer for signal <data_out<24>>.
+    Found 1-bit tristate buffer for signal <data_out<23>>.
+    Found 1-bit tristate buffer for signal <data_out<22>>.
+    Found 1-bit tristate buffer for signal <data_out<21>>.
+    Found 1-bit tristate buffer for signal <data_out<20>>.
+    Found 1-bit tristate buffer for signal <data_out<19>>.
+    Found 1-bit tristate buffer for signal <data_out<18>>.
+    Found 1-bit tristate buffer for signal <data_out<17>>.
+    Found 1-bit tristate buffer for signal <data_out<16>>.
+    Found 1-bit tristate buffer for signal <data_out<15>>.
+    Found 1-bit tristate buffer for signal <data_out<14>>.
+    Found 1-bit tristate buffer for signal <data_out<13>>.
+    Found 1-bit tristate buffer for signal <data_out<12>>.
+    Found 1-bit tristate buffer for signal <data_out<11>>.
+    Found 1-bit tristate buffer for signal <data_out<10>>.
+    Found 1-bit tristate buffer for signal <data_out<9>>.
+    Found 1-bit tristate buffer for signal <data_out<8>>.
+    Found 1-bit tristate buffer for signal <data_out<7>>.
+    Found 1-bit tristate buffer for signal <data_out<6>>.
+    Found 1-bit tristate buffer for signal <data_out<5>>.
+    Found 1-bit tristate buffer for signal <data_out<4>>.
+    Found 1-bit tristate buffer for signal <data_out<3>>.
+    Found 1-bit tristate buffer for signal <data_out<2>>.
+    Found 1-bit tristate buffer for signal <data_out<1>>.
+    Found 1-bit tristate buffer for signal <data_out<0>>.
+    Summary:
+	inferred  33 Tristate(s).
+Unit <l1_data_way0_1> synthesized.
+
+
+Synthesizing Unit <l1_cache>.
+    Related source file is "C:/Users/Pratyus/cache/l1_cache.vhd".
+Unit <l1_cache> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Tristates                                            : 132
+ 1-bit tristate buffer                                 : 132
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <l1_cache> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block l1_cache, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : l1_cache.ngr
+Top Level Output File Name         : l1_cache
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 75
+
+Cell Usage :
+# BELS                             : 2
+#      GND                         : 1
+#      VCC                         : 1
+# IO Buffers                       : 36
+#      OBUFT                       : 36
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                        0  out of   4656     0%  
+ Number of IOs:                          75
+ Number of bonded IOBs:                  36  out of    232    15%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.39 secs
+ 
+--> 
+
+Total memory usage is 262152 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   47 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

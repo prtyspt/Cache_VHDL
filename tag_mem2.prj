@@ -1,0 +1,3 @@
+vhdl work "Dff.vhd"
+vhdl work "tag_data_l2.vhd"
+vhdl work "tag_mem2.vhd"

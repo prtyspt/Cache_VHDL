@@ -1,0 +1,8 @@
+vhdl work "Dff.vhd"
+vhdl work "tag_data_l2.vhd"
+vhdl work "decoder4x16.vhd"
+vhdl work "decoder2x4.vhd"
+vhdl work "tag_mem2.vhd"
+vhdl work "inout_buf_tag2.vhd"
+vhdl work "deocder10x1024.vhd"
+vhdl work "cache_tag_data_l2.vhd"

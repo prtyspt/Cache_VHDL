@@ -1,0 +1,7 @@
+vhdtdtfi -lib work address_fields.vhd -prj cache -o address_fields.spl -module address_fields -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e address_fields.spl C:/Users/Pratyus/cache/address_fields.sym 
+vhdtdtfi -prj cache -o C:/Users/Pratyus/cache/address_fields.vhi -module address_fields -template C:/Xilinx/13.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work address_fields.vhd 
+vhdtdtfi -lib work address_fields.vhd -prj cache -o address_fields.spl -module address_fields -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e address_fields.spl C:/Users/Pratyus/cache/address_fields.sym 
+vhdtdtfi -lib work address_fields.vhd -prj cache -o address_fields.spl -module address_fields -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e address_fields.spl C:/Users/Pratyus/cache/address_fields.sym 

@@ -1,0 +1,7 @@
+vhdl work "Dff.vhd"
+vhdl work "reg_128_data.vhd"
+vhdl work "decoder4x16.vhd"
+vhdl work "memory_decoder_8x256.vhd"
+vhdl work "inoutbuffer.vhd"
+vhdl work "data_mem.vhd"
+vhdl work "memory_l1.vhd"

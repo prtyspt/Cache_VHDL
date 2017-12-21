@@ -1,0 +1,9 @@
+[Inputs]
+rd
+wr
+clk
+en
+=add[7:0]=
+[Outputs]
+[BiDir]
+=tag[21:0]=

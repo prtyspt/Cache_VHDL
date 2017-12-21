@@ -1,0 +1,6 @@
+[Inputs]
+en
+=D[3:0]=
+[Outputs]
+=E[15:0]=
+[BiDir]

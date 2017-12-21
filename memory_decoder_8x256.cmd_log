@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/Pratyus/cache/memory_decoder_8x256.xst" -ofn "C:/Users/Pratyus/cache/memory_decoder_8x256.syr" 
+vhdtdtfi -lib work decoder4x16.vhd -lib work memory_decoder_8x256.vhd -prj cache -o memory_decoder_8x256.spl -module memory_decoder_8x256 -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e memory_decoder_8x256.spl C:/Users/Pratyus/cache/memory_decoder_8x256.sym 
+vhdtdtfi -prj cache -o C:/Users/Pratyus/cache/memory_decoder_8x256.vhi -module memory_decoder_8x256 -template C:/Xilinx/13.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work decoder4x16.vhd -lib work memory_decoder_8x256.vhd 
+vhdtdtfi -lib work decoder4x16.vhd -lib work memory_decoder_8x256.vhd -prj cache -o memory_decoder_8x256.spl -module memory_decoder_8x256 -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e memory_decoder_8x256.spl C:/Users/Pratyus/cache/memory_decoder_8x256.sym 
+vhdtdtfi -lib work decoder4x16.vhd -lib work memory_decoder_8x256.vhd -prj cache -o memory_decoder_8x256.spl -module memory_decoder_8x256 -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e memory_decoder_8x256.spl C:/Users/Pratyus/cache/memory_decoder_8x256.sym 

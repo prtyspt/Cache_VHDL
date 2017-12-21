@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Pratyus/cache/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Pratyus/cache/xst"
+elaborate
+-ifn tag_comparator2.prj
+-ifmt mixed

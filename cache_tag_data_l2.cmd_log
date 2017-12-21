@@ -1,0 +1,2 @@
+vhdtdtfi -lib work Dff.vhd -lib work tag_data_l2.vhd -lib work decoder4x16.vhd -lib work decoder2x4.vhd -lib work tag_mem2.vhd -lib work inout_buf_tag2.vhd -lib work deocder10x1024.vhd -lib work cache_tag_data_l2.vhd -prj cache -o cache_tag_data_l2.spl -module cache_tag_data_l2 -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e cache_tag_data_l2.spl C:/Users/Pratyus/cache/cache_tag_data_l2.sym 

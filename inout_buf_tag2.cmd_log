@@ -1,0 +1,2 @@
+vhdtdtfi -lib work inout_buf_tag2.vhd -prj cache -o inout_buf_tag2.spl -module inout_buf_tag2 -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e inout_buf_tag2.spl C:/Users/Pratyus/cache/inout_buf_tag2.sym 

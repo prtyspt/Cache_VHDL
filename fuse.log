@@ -1,0 +1,17 @@
+Running: C:\Xilinx\13.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Pratyus/cache/address_fields_isim_beh.exe -prj C:/Users/Pratyus/cache/address_fields_beh.prj work.address_fields 
+ISim O.61xd (signature 0x1cce1bb2)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Pratyus/cache/address_fields.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity address_fields
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 VHDL Units
+Built simulation executable C:/Users/Pratyus/cache/address_fields_isim_beh.exe
+Fuse Memory Usage: 19324 KB
+Fuse CPU Usage: 295 ms

@@ -1,0 +1,10 @@
+[Inputs]
+clk
+rd
+wr
+=add[31:0]=
+=en[3:0]=
+[Outputs]
+=cache_hit[3:0]=
+[BiDir]
+=data_out[31:0]=

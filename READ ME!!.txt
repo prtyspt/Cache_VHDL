@@ -1,0 +1,13 @@
+This file contains the instructions to review he modules of the cache file:
+
+1) Open the cache.xise file present in the CD.
+2) Preferably use xilinx 64-bit navigator version 12.1 to open the file.
+3) You'll find the modules designed in a structural heirarchy in the left window pane.
+4) You can check the individual modules at each level for behavioral and syntax checks.
+5) At the moment, the code is not able to simulate because    the Spartan-II FGPAs available in the lab and whose specifications are added in the module, don't support    double edge-triggering.
+(For more information refer to: www.xilinx.com/support/answers/17023.htm )
+6) You'll find the explanation for each module in the report.
+
+
+We hope you enjoy the report and the design.
+Thank You!

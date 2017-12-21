@@ -1,0 +1,8 @@
+vhdtdtfi -lib work inoutbuffer.vhd -prj cache -o inoutbuffer.spl -module inoutbuffer -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e inoutbuffer.spl C:/Users/Pratyus/cache/inoutbuffer.sym 
+vhdtdtfi -lib work inoutbuffer.vhd -prj cache -o inoutbuffer.spl -module inoutbuffer -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e inoutbuffer.spl C:/Users/Pratyus/cache/inoutbuffer.sym 
+vhdtdtfi -lib work inoutbuffer.vhd -prj cache -o inoutbuffer.spl -module inoutbuffer -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e inoutbuffer.spl C:/Users/Pratyus/cache/inoutbuffer.sym 
+vhdtdtfi -lib work inoutbuffer.vhd -prj cache -o inoutbuffer.spl -module inoutbuffer -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e inoutbuffer.spl C:/Users/Pratyus/cache/inoutbuffer.sym 

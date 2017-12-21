@@ -1,0 +1,237 @@
+Release 13.2 - xst O.61xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: memory_l1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "memory_l1.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "memory_l1"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : memory_l1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Pratyus/cache/Dff.vhd" in Library work.
+Architecture behavioral of Entity dff is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/reg_128_data.vhd" in Library work.
+Architecture behavioral of Entity reg_128_data is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/decoder4x16.vhd" in Library work.
+Architecture behavioral of Entity decoder4x16 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/memory_decoder_8x256.vhd" in Library work.
+Architecture behavioral of Entity memory_decoder_8x256 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/inoutbuffer.vhd" in Library work.
+Architecture behavioral of Entity inoutbuffer is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/data_mem.vhd" in Library work.
+Architecture behavioral of Entity data_mem is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/memory_l1.vhd" in Library work.
+Architecture structural of Entity memory_l1 is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <memory_l1> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <memory_decoder_8x256> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <inoutbuffer> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <data_mem> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <decoder4x16> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <reg_128_data> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Dff> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <memory_l1> in library <work> (Architecture <structural>).
+Entity <memory_l1> analyzed. Unit <memory_l1> generated.
+
+Analyzing Entity <memory_decoder_8x256> in library <work> (Architecture <behavioral>).
+Entity <memory_decoder_8x256> analyzed. Unit <memory_decoder_8x256> generated.
+
+Analyzing Entity <decoder4x16> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "C:/Users/Pratyus/cache/decoder4x16.vhd" line 95: Mux is complete : default of case is discarded
+Entity <decoder4x16> analyzed. Unit <decoder4x16> generated.
+
+Analyzing Entity <inoutbuffer> in library <work> (Architecture <behavioral>).
+Entity <inoutbuffer> analyzed. Unit <inoutbuffer> generated.
+
+Analyzing Entity <data_mem> in library <work> (Architecture <behavioral>).
+Entity <data_mem> analyzed. Unit <data_mem> generated.
+
+Analyzing Entity <reg_128_data> in library <work> (Architecture <behavioral>).
+Entity <reg_128_data> analyzed. Unit <reg_128_data> generated.
+
+Analyzing Entity <Dff> in library <work> (Architecture <behavioral>).
+Entity <Dff> analyzed. Unit <Dff> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <inoutbuffer>.
+    Related source file is "C:/Users/Pratyus/cache/inoutbuffer.vhd".
+    Found 128-bit tristate buffer for signal <A>.
+    Found 128-bit tristate buffer for signal <B>.
+    Summary:
+	inferred 256 Tristate(s).
+Unit <inoutbuffer> synthesized.
+
+
+Synthesizing Unit <decoder4x16>.
+    Related source file is "C:/Users/Pratyus/cache/decoder4x16.vhd".
+WARNING:Xst:737 - Found 16-bit latch for signal <E>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-of-16 decoder for signal <E$mux0001> created at line 47.
+    Summary:
+	inferred   1 Decoder(s).
+Unit <decoder4x16> synthesized.
+
+
+Synthesizing Unit <Dff>.
+    Related source file is "C:/Users/Pratyus/cache/Dff.vhd".
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Dff> synthesized.
+
+
+Synthesizing Unit <memory_decoder_8x256>.
+    Related source file is "C:/Users/Pratyus/cache/memory_decoder_8x256.vhd".
+Unit <memory_decoder_8x256> synthesized.
+
+
+Synthesizing Unit <reg_128_data>.
+    Related source file is "C:/Users/Pratyus/cache/reg_128_data.vhd".
+WARNING:Xst:1780 - Signal <outbuf> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <reg_128_data> synthesized.
+
+
+Synthesizing Unit <data_mem>.
+    Related source file is "C:/Users/Pratyus/cache/data_mem.vhd".
+Unit <data_mem> synthesized.
+
+
+Synthesizing Unit <memory_l1>.
+    Related source file is "C:/Users/Pratyus/cache/memory_l1.vhd".
+Unit <memory_l1> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 32768
+ 1-bit register                                        : 32768
+# Latches                                              : 17
+ 16-bit latch                                          : 17
+# Decoders                                             : 17
+ 1-of-16 decoder                                       : 17
+# Tristates                                            : 2
+ 128-bit tristate buffer                               : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+

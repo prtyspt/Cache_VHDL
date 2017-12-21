@@ -1,0 +1,2 @@
+vhdtdtfi -lib work address_fieldsl2.vhd -prj cache -o address_fieldsl2.spl -module address_fieldsl2 -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e address_fieldsl2.spl C:/Users/Pratyus/cache/address_fieldsl2.sym 

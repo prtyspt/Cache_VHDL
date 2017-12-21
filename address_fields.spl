@@ -1,0 +1,8 @@
+[Inputs]
+sep
+=addr[31:0]=
+[Outputs]
+=word[1:0]=
+=set[7:0]=
+=tag[21:0]=
+[BiDir]

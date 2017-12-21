@@ -1,0 +1,2 @@
+vhdtdtfi -lib work tag_comparator2.vhd -prj cache -o tag_comparator2.spl -module tag_comparator2 -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e tag_comparator2.spl C:/Users/Pratyus/cache/tag_comparator2.sym 

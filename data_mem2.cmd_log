@@ -1,0 +1,2 @@
+vhdtdtfi -lib work Dff.vhd -lib work reg_128_data.vhd -lib work data_mem2.vhd -prj cache -o data_mem2.spl -module data_mem2 -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e data_mem2.spl C:/Users/Pratyus/cache/data_mem2.sym 

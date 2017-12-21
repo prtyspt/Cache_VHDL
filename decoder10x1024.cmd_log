@@ -1,0 +1,4 @@
+vhdtdtfi -lib work decoder4x16.vhd -lib work decoder2x4.vhd -lib work deocder10x1024.vhd -prj cache -o decoder10x1024.spl -module decoder10x1024 -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e decoder10x1024.spl C:/Users/Pratyus/cache/decoder10x1024.sym 
+vhdtdtfi -lib work decoder4x16.vhd -lib work decoder2x4.vhd -lib work deocder10x1024.vhd -prj cache -o decoder10x1024.spl -module decoder10x1024 -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e decoder10x1024.spl C:/Users/Pratyus/cache/decoder10x1024.sym 

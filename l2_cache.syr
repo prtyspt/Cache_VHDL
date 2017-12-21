@@ -1,0 +1,221 @@
+Release 13.2 - xst O.61xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: l2_cache.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "l2_cache.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "l2_cache"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : l2_cache
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Pratyus/cache/Dff.vhd" in Library work.
+Architecture behavioral of Entity dff is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/tag_data_l2.vhd" in Library work.
+Architecture behavioral of Entity tag_data_l2 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/decoder2x4.vhd" in Library work.
+Architecture behavioral of Entity decoder2x4 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/decoder4x16.vhd" in Library work.
+Architecture behavioral of Entity decoder4x16 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/reg_128_data.vhd" in Library work.
+Architecture behavioral of Entity reg_128_data is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/deocder10x1024.vhd" in Library work.
+Architecture behavioral of Entity decoder10x1024 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/inout_buf_tag2.vhd" in Library work.
+Architecture behavioral of Entity inout_buf_tag2 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/tag_mem2.vhd" in Library work.
+Architecture behavioral of Entity tag_mem2 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/inoutbuffer.vhd" in Library work.
+Architecture behavioral of Entity inoutbuffer is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/data_mem2.vhd" in Library work.
+Architecture behavioral of Entity data_mem2 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/memory_l2.vhd" in Library work.
+Architecture structural of Entity memory_l2 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/cache_tag_data_l2.vhd" in Library work.
+Architecture structural of Entity cache_tag_data_l2 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/address_fieldsl2.vhd" in Library work.
+Architecture behavioral of Entity address_fieldsl2 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/tag_comparator2.vhd" in Library work.
+Architecture behavioral of Entity tag_comparator2 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/data_buff_l1.vhd" in Library work.
+Architecture behavioral of Entity data_buff_l1 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/L2_data_way0.vhd" in Library work.
+Architecture structural of Entity l2_data_way0 is up to date.
+Compiling vhdl file "C:/Users/Pratyus/cache/l2_cache.vhd" in Library work.
+Architecture structural of Entity l2_cache is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <l2_cache> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <l2_data_way0> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <memory_l2> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <cache_tag_data_l2> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <address_fieldsl2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <tag_comparator2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <data_buff_l1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <decoder10x1024> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <inoutbuffer> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <data_mem2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <inout_buf_tag2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <tag_mem2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <decoder2x4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <decoder4x16> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <reg_128_data> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <tag_data_l2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Dff> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <l2_cache> in library <work> (Architecture <structural>).
+Entity <l2_cache> analyzed. Unit <l2_cache> generated.
+
+Analyzing Entity <l2_data_way0> in library <work> (Architecture <structural>).
+Entity <l2_data_way0> analyzed. Unit <l2_data_way0> generated.
+
+Analyzing Entity <memory_l2> in library <work> (Architecture <structural>).
+Entity <memory_l2> analyzed. Unit <memory_l2> generated.
+
+Analyzing Entity <decoder10x1024> in library <work> (Architecture <behavioral>).
+Entity <decoder10x1024> analyzed. Unit <decoder10x1024> generated.
+
+Analyzing Entity <decoder2x4> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "C:/Users/Pratyus/cache/decoder2x4.vhd" line 59: Mux is complete : default of case is discarded
+Entity <decoder2x4> analyzed. Unit <decoder2x4> generated.
+
+Analyzing Entity <decoder4x16> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "C:/Users/Pratyus/cache/decoder4x16.vhd" line 95: Mux is complete : default of case is discarded
+Entity <decoder4x16> analyzed. Unit <decoder4x16> generated.
+
+Analyzing Entity <inoutbuffer> in library <work> (Architecture <behavioral>).
+Entity <inoutbuffer> analyzed. Unit <inoutbuffer> generated.
+
+Analyzing Entity <data_mem2> in library <work> (Architecture <behavioral>).
+Entity <data_mem2> analyzed. Unit <data_mem2> generated.
+
+Analyzing Entity <reg_128_data> in library <work> (Architecture <behavioral>).
+Entity <reg_128_data> analyzed. Unit <reg_128_data> generated.
+
+Analyzing Entity <Dff> in library <work> (Architecture <behavioral>).
+ERROR:Xst:797 - "C:/Users/Pratyus/cache/Dff.vhd" line 47: unsupported Clock statement.
+--> 
+
+Total memory usage is 305424 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+
